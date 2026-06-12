@@ -6,6 +6,16 @@ import warehousePhoto from "@/assets/warehouse.jpg";
 import actionPhoto from "@/assets/action.jpg";
 import trainingPhoto from "@/assets/training.jpg";
 import celebratePhoto from "@/assets/celebrate.jpg";
+import Judah from "@/assets/Judah Daycare Post 2.png";
+import sasa from "@/assets/sssss.png";
+import Untitled from "@/assets/Untitled.png";
+import WhatsApp6 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (6).jpeg";
+import WhatsApp7 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (7).jpeg";
+import WhatsApp8 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (8).jpeg";
+import WhatsApp from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM.jpeg";
+import WhatsApp1 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.30 PM (1).jpeg";
+import WhatsApp2 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.30 PM (2).jpeg";
+import warehouse from "@/assets/warehouse.jpg";
 import {
   MapPin, Phone, Mail, Globe, Heart, Trophy, Users, Calendar,
   Target, Sparkles, Building2, Rocket, ArrowRight, GraduationCap,
@@ -26,7 +36,7 @@ export const Route = createFileRoute("/")({
 });
 
 // ---- CONFIG: update these values anytime ----
-const FUNDRAISING_GOAL = 30000;
+const FUNDRAISING_GOAL = 45000;
 const RAISED_AMOUNT = 15000; // update this to reflect current total
 // Replace with your real payment URL in src/routes/donate.tsx
 // -------------------------------------------------
@@ -198,7 +208,7 @@ function Index() {
       {/* MARQUEE GALLERY */}
       <section aria-label="Gallery" className="relative py-6 border-y border-border bg-surface/30 overflow-hidden">
         <div className="flex gap-6 animate-[marquee_38s_linear_infinite] w-max">
-          {[actionPhoto, trainingPhoto, celebratePhoto, teamPhoto, warehousePhoto, actionPhoto, trainingPhoto, celebratePhoto, teamPhoto, warehousePhoto].map((src, i) => (
+          {[ WhatsApp, WhatsApp1,Untitled, WhatsApp2, WhatsApp6, WhatsApp7, WhatsApp8, Judah, sasa, warehouse ].map((src, i) => (
             <div key={i} className="relative h-44 w-72 md:h-56 md:w-96 rounded-2xl overflow-hidden border border-border group">
               <img src={src} alt="" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
@@ -214,10 +224,12 @@ function Index() {
             <div className="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-4">2011 — Where it all started</div>
             <h2 className="font-[var(--font-display)] text-5xl md:text-6xl mb-6">One coach. One dream. One garage.</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              It started in a small garage training space with a big mission: to develop players, build confidence, and create opportunities through soccer.
+              FutebolTraining was founded in 2011 inside a garage on Laurelwood Avenue with a simple mission: to help players develop confidence, technical excellence, and a lifelong passion for the game.
             </p>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              What began as individual technical training has grown into a player development platform that has impacted more than 3,000 athletes throughout the Portland area and beyond. Many players came to us lacking confidence, experience, or opportunities. Through dedicated coaching, mentorship, and a commitment to individual growth, we helped them develop the skills, mindset, and belief needed to pursue their goals both on and off the field.</p>
             <p className="text-muted-foreground leading-relaxed">
-              In 2014, ADF Portland was founded to provide affordable, high-quality soccer training to youth throughout the Portland area — expanding training, creating year-round programming, and building pathways for players to compete at higher levels.
+              In 2016, Finezza was established to expand that vision through high-quality futsal training and competitive opportunities for youth throughout the region. Our goal was to provide year-round programming, increase access to player development, and create pathways for athletes to compete and succeed at higher levels of the game.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4" data-reveal>
@@ -264,8 +276,9 @@ function Index() {
               className="rounded-2xl border border-border w-full"
             />
             <p className="text-lg text-muted-foreground leading-relaxed">
-              For more than a decade, we have rented gyms, fields, schools, and training spaces. Now we're creating a <span className="text-foreground font-semibold">permanent home</span> where players can train year-round, develop their skills, and build a brighter future.
-            </p>
+              We believe every player deserves a chance to develop their potential, pursue their dreams, and experience the joy of the game. Our story is about more than soccer or futsal—it is about building confidence, creating opportunities, strengthening communities, and inspiring the next generation through sport.
+              <br />
+              Today, <span className="text-foreground font-semibold">Finezza and FutebolTraining </span>proudly serve families throughout Portland, Gladstone, Hillsboro, Vancouver, Lake Oswego, West Linn, Milwaukie, Clackamas, Oregon City, and surrounding communities. We strive to provide a welcoming environment where players of all backgrounds and ability levels can learn, grow, and thrive.  </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
             {[
@@ -340,11 +353,10 @@ function Index() {
                   <Link
                     to="/donate"
                     key={d.name}
-                    className={`group flex items-center justify-between p-4 rounded-xl border transition-all hover:-translate-y-0.5 ${
-                      d.special
-                        ? "border-primary bg-primary/10 hover:bg-primary/20"
-                        : "border-border bg-background hover:border-primary"
-                    }`}
+                    className={`group flex items-center justify-between p-4 rounded-xl border transition-all hover:-translate-y-0.5 ${d.special
+                      ? "border-primary bg-primary/10 hover:bg-primary/20"
+                      : "border-border bg-background hover:border-primary"
+                      }`}
                   >
                     <div className="flex items-center gap-3">
                       <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${d.color} flex items-center justify-center`}>
