@@ -8,14 +8,26 @@ import trainingPhoto from "@/assets/training.jpg";
 import celebratePhoto from "@/assets/celebrate.jpg";
 import Judah from "@/assets/Judah Daycare Post 2.png";
 import sasa from "@/assets/sssss.png";
-import Untitled from "@/assets/Untitled.png";
+import Untitled from "@/assets/Untitled.jpg";
 import WhatsApp6 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (6).jpeg";
 import WhatsApp7 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (7).jpeg";
 import WhatsApp8 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (8).jpeg";
 import WhatsApp from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM.jpeg";
 import WhatsApp1 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.30 PM (1).jpeg";
 import WhatsApp2 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.30 PM (2).jpeg";
-import warehouse from "@/assets/warehouse.jpg";
+import Untitled111 from "@/assets/Untitled111.png";
+import Untitledsss from "@/assets/Untitledsss.png";
+import Untitledssssw from "@/assets/Untitledssssw.png";
+import Untitledwww from "@/assets/Untitledwww.png";
+import WhatsApp3 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.28 PM (1).jpeg";
+import WhatsApp4 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.28 PM (2).jpeg";
+import WhatsApp5 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.28 PM.jpeg";
+import WhatsApp9 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (1).jpeg";
+import WhatsApp10 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (2).jpeg";
+import WhatsApp11 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (3).jpeg";
+import WhatsApp12 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (4).jpeg";
+import WhatsApp13 from "@/assets/WhatsApp Image 2026-06-11 at 9.23.29 PM (5).jpeg";
+
 import {
   MapPin, Phone, Mail, Globe, Heart, Trophy, Users, Calendar,
   Target, Sparkles, Building2, Rocket, ArrowRight, GraduationCap,
@@ -208,7 +220,7 @@ function Index() {
       {/* MARQUEE GALLERY */}
       <section aria-label="Gallery" className="relative py-6 border-y border-border bg-surface/30 overflow-hidden">
         <div className="flex gap-6 animate-[marquee_38s_linear_infinite] w-max">
-          {[ WhatsApp, WhatsApp1,Untitled, WhatsApp2, WhatsApp6, WhatsApp7, WhatsApp8, Judah, sasa, warehouse ].map((src, i) => (
+          {[Untitled, Untitled111, Untitledsss, Untitledssssw, Untitledwww, WhatsApp, WhatsApp1, WhatsApp2, WhatsApp3,WhatsApp4, WhatsApp5,  WhatsApp6, WhatsApp7, WhatsApp8,WhatsApp9, WhatsApp10, WhatsApp11, WhatsApp12, WhatsApp13, Judah, sasa].map((src, i) => (
             <div key={i} className="relative h-44 w-72 md:h-56 md:w-96 rounded-2xl overflow-hidden border border-border group">
               <img src={src} alt="" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
