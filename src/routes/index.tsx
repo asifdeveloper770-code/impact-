@@ -222,7 +222,7 @@ function Index() {
         <div className="flex gap-6 animate-[marquee_38s_linear_infinite] w-max">
           {[Untitled, Untitled111, Untitledsss, Untitledssssw, Untitledwww, WhatsApp, WhatsApp1, WhatsApp2, WhatsApp3,WhatsApp4, WhatsApp5,  WhatsApp6, WhatsApp7, WhatsApp8,WhatsApp9, WhatsApp10, WhatsApp11, WhatsApp12, WhatsApp13, Judah, sasa].map((src, i) => (
             <div key={i} className="relative h-44 w-72 md:h-56 md:w-96 rounded-2xl overflow-hidden border border-border group">
-              <img src={src} alt="" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src={src} alt="" loading="lazy" className="w-full h-full object-fit transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
             </div>
           ))}
